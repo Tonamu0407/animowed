@@ -1,0 +1,46 @@
+{% extends "_base.html" %}
+{% load static %}
+
+{% block title %}signup{% endblock %}
+
+{% block content %} 
+<div class="relative flex flex-col items-center mx-auto lg:flex-row-reverse lg:max-w-5xl lg:mt-12 xl:max-w-6xl ">
+
+
+    <div class="w-full h-64 lg:w-1/2 lg:h-auto">
+        <img class="h-full w-full object-cover" src="https://m.media-amazon.com/images/I/81RWQFh2MdL._SY879_.jpg">
+    </div>
+    <div
+        class="max-w-lg bg-white bg-opacity-75 md:max-w-2xl md:z-10 md:shadow-lg md:absolute md:top-0 md:mt-48 lg:w-3/5 lg:left-0 lg:mt-20 lg:ml-20 xl:mt-24 xl:ml-12 font-itim">
+        <div class="flex flex-col p-12 md:px-16">
+            <h2 class="text-2xl font-bold uppercase text-sky-900 lg:text-4xl font-itim">Neon genesis evangelion</h2>
+            <p class="mt-4">
+                เรื่องราวการต่อสู้ของมวลมนุษยชาติกับสิ่งมีชีวิตขนาดมหึมาที่ระบุตัวตนไม่ได้ โลกทัศน์ภายในเรื่องเป็นโลกที่กำลังพยายามฟื้นฟูสภาพหลังจาก
+                ที่เกิดมหาภัยพิบัติ “2nd impact” อันได้คร่าชีวิตของประชากรโลกไปเกินครึ่ง
+                15 ปีหลังจากเกิดเหตุการณ์ 2nd impact โลกได้รับการฟื้นฟูคืนในบางส่วน การบุกของสิ่งมีชีวิตที่ไม่สามารถระบุถึงแหล่งที่มา 
+                ได้เข้าจู่โจมนครปราการแห่งมวลมนุษยชาติ Neo Tokyo-3 เมืองนี้ถูกสร้างเพื่อเตรียมรับมือต่อการมาของพวกมันที่ถูกเรียกว่าเป็น “เทวทูต” 
+                แต่ดูเหมือนว่าการบุกรุกของพวกมันเหมือนเป็นการส่งสาสน์เตือนว่า วันแห่งพันธะสัญญาได้นับเวลาถอยหลังเพื่อเข้าสู่บทพิพากษาครั้งใหม่ เริ่มต้นขึ้นแล้ว…อีกครั้ง…
+            </p>
+        <h2 class="text-lg font-semibold mb-4">Tags:</h2>
+        <div class="flex py-4 gap-2 ">
+            <a class="bg-green-200 hover:bg-green-300 py-1 px-2 rounded-lg text-sm">ปรัชญา</a>
+            <a class="bg-blue-200 hover:bg-blue-300 py-1 px-2 rounded-lg text-sm">เทววิทยา</a>
+            <a class="bg-pink-200 hover:bg-pink-300 py-1 px-2 rounded-lg text-sm">แอ็คชั่น</a>
+            <a class="bg-purple-200 hover:bg-purple-300 py-1 px-2 rounded-lg text-sm">จิตวิทยา</a>
+            </div>
+            <h2 class="text-lg font-semibold mb-4">streaming:</h2>
+            <div class="grid grid-cols-1 md:grid-cols-5 gap-3 p-4 max-w-[300px] md:max-w-[300px] place-items-center">
+                <img class="" src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Netflix-new-icon.png">
+                <img class="" src="https://curioustimes.in/wp-content/uploads/2022/07/Roohis-Creatives-4-2.jpg">
+            </div>
+            <form action="/">
+                <button class="px-8 py-4 bg-gradient-to-r from-blue-500 to-purple-500 text-white font-bold rounded-full transition-transform transform-gpu hover:-translate-y-1 hover:shadow-lg">
+                    Back
+                </button>
+            </form>
+    </div>
+        </div>
+    
+    
+</div>
+{% endblock content %}  

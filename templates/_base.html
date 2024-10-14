@@ -1,0 +1,58 @@
+	{% load compress %}
+	{% load static %}
+
+	<!DOCTYPE html>
+	<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content=
+			"width=device-width, initial-scale=1.0">
+		<title>{% block title %}Untitled{% endblock %}</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Athiti&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Kanit&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Kanit&family=Sarabun&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Mitr:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Mitr:wght@400;600&family=Prompt&display=swap" rel="stylesheet">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Klee+One:wght@400;600&display=swap" rel="stylesheet">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
+
+
+		{% compress css %}
+		<link rel="stylesheet"
+			href="{% static 'src/output.css' %}">
+		{% endcompress %}
+
+	</head>
+	<body class="bg-gray-800">
+		<nav class="bg-white border-gray-200 py-2.5 dark:bg-gray-900 font-itim">
+			<div class="flex flex-wrap items-center justify-between max-w-screen-xl px-4 mx-auto">
+				<a href="/" class="flex items-center">
+					
+					<img src="{% static 'image\BIGANIMO.png' %}" class="object-fill h-16 w-26 mr-12 "> 
+					
+		</a>
+				<div class="ml-auto">
+					<a href="/"
+						class="block py-2 pl-3 pr-4 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-purple-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700">
+								หน้าแรก
+							</a>
+				</div>
+				<div class="ml-auto">
+					<a href="/login">
+						<button class="px-8 py-4 bg-gradient-to-r from-blue-500 to-purple-500 text-white font-bold rounded transition-transform transform-gpu hover:shadow-lg">
+							login
+						  </button>
+					</a>
+				</div>
+			</div>
+		</nav>
+			{% block content %}
+			{% endblock content %}

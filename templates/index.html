@@ -1,0 +1,154 @@
+{% extends "_base.html" %}
+{% load static %}
+
+{% block title %}Home{% endblock %}
+
+{% block content %}
+<section class="w-full"></section>
+    <div class="w-full h-[400px] bg-[url('https://w0.peakpx.com/wallpaper/217/697/HD-wallpaper-anime-room-and-background-aesthetic-anime-room.jpg')] bg-cover bg-no-repeat bg-center flex flex-col justify-center items-center ">
+        <div>
+            <h1 class="text-white text-center xl:text-5xl lg:text-4xl md:text-3xl sm:text-2xl xs:text-xl font-semibold bg-gray-800 p-2 bg-opacity-40 rounded-sm font-itim">Search your anime</h1>
+        </div>
+        <div class="w-full mx-auto">
+            <form>
+                <div class="xl:w-1/2 lg:w-[60%] md:w-[70%] sm:w-[70%] xs:w-[90%] mx-auto flex gap-2 md:mt-6 xs:mt-4 mx-4">
+                    <input type="text" class="border border-gray-400 w-full p-2 rounded-md text-xl pl-2"
+                            placeholder="" />
+                    <button type="submit" class="px-[10px] p-[10px] bg-gradient-to-r from-blue-500 to-purple-500 text-white font-bold rounded transition-transform transform-gpu hover:-translate-y-1 hover:shadow-lg font-itim">Search</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</section>
+
+<div class="max-w-2xl mx-auto mt-24 p-6">
+    <div class="flex gap-3 bg-white border border-gray-300 rounded-xl overflow-hidden items-center justify-start">
+
+        <div class="relative w-32 h-32 flex-shrink-0 -translate-y-6">
+            <img class="absolute left-0 top-0 w-full h-auto object-cover object-center transition duration-50 " loading="lazy" src="https://m.media-amazon.com/images/M/MV5BYmU4ZjM1YWItNGExMS00MWMxLWJlODMtNGNiOGNlOWI4YzMyXkEyXkFqcGc@._V1_.jpg">
+        </div>
+
+        <div class="flex flex-col gap-2 py-2 font-itim">
+
+            <p class="text-xl font-bold">Oshi no ko</p>
+
+            <p class="text-gray-500">
+                ในวงการนี้น่ะคำโกหกก็คืออาวุธนั่นแหละ โกโร่ ชายหนุ่มผู้ทำงาน เป็นสูตินารีแพทย์ในเมืองชนบท
+                โฮชิโนะ ไอ ไอดอลผู้เป็น "โอชิ" ของโกโร่ก็กำลังขึ้นแท่นเป็นดาวดวงเด่นของวงการ ระหว่างทั้งสองคนทำให้ชะตากรรมค่อยๆ เริ่มเคลื่อนไหว...
+            </p>
+            <a href="/oshi">
+                <button class="px-8 py-4 bg-gradient-to-r from-blue-500 to-purple-500 text-white font-bold rounded-full transition-transform transform-gpu hover:-translate-y-1 hover:shadow-lg">
+                    MORE
+                  </button>
+            </a>
+        </div>
+
+    </div>
+
+    <div class="max-w-2xl mx-auto mt-24 font-itim">
+        <div class="flex gap-3 bg-white border border-gray-300 rounded-xl overflow-hidden items-center justify-start">
+    
+            <div class="relative w-32 h-32 flex-shrink-0 -translate-y-6">
+                <img class="absolute left-0 top-0 w-full h-auto object-cover object-center transition duration-50" loading="lazy" src="https://m.media-amazon.com/images/I/71cBH4QFyIL._AC_SL1500_.jpg">
+            </div>
+    
+            <div class="flex flex-col gap-2 py-2">
+    
+                <p class="text-xl font-bold">Dr.stone</p>
+    
+                <p class="text-gray-500">
+                    จะเกิดอะไรขึ้นถ้ามนุษย์ทั่วโลกต้องกลายเป็นหิน แต่เมื่อเวลาผ่านไป 3,700 ปี 
+                    มนุษย์บางส่วนก็ถ้าหลุดจากร่างกายที่กลายเป็นหินและพบกว่าโลกได้กลับกลายเป็นยุคหินไปซะแล้ว 
+                    พบเรื่องราวการสร้างอารยธรรมของโลกใหม่ใน Dr. Stone...
+                </p>
+    
+                <a href="/stone">
+                    <button class="px-8 py-4 bg-gradient-to-r from-blue-500 to-purple-500 text-white font-bold rounded-full transition-transform transform-gpu hover:-translate-y-1 hover:shadow-lg">
+                        MORE
+                      </button>
+                </a>
+            </div>
+    
+        </div>
+
+        <div class="max-w-2xl mx-auto mt-24 font-itim">
+            <div class="flex gap-3 bg-white border border-gray-300 rounded-xl overflow-hidden items-center justify-start">
+        
+                <div class="relative w-32 h-32 flex-shrink-0 -translate-y-6">
+                    <img class="absolute left-0 top-0 w-full h-auto object-cover object-center transition duration-50" loading="lazy" src="https://m.media-amazon.com/images/I/81RWQFh2MdL._SY879_.jpg">
+                </div>
+        
+                <div class="flex flex-col gap-2 py-2">
+        
+                    <p class="text-xl font-bold">Neon genesis evangelion</p>
+        
+                    <p class="text-gray-500">
+                        เรื่องราวการต่อสู้ของมวลมนุษยชาติกับสิ่งมีชีวิตขนาดมหึมาที่ระบุตัวตนไม่ได้ พวกมันถูกเรียกว่าเป็น “เทวทูตหรือสาวก” 
+                        ผู้ส่งสาสน์ของพระเจ้า โลกทัศน์ภายในเรื่องเป็นโลกที่กำลังพยายามฟื้นฟูสภาพหลังจากที่เกิดมหาภัยพิบัติ “2nd impact” 
+                        อันได้คร่าชีวิตของประชากรโลกไปเกินครึ่ง…
+                    </p>
+                    <a href="/eva">
+                        <button class="px-8 py-4 bg-gradient-to-r from-blue-500 to-purple-500 text-white font-bold rounded-full transition-transform transform-gpu hover:-translate-y-1 hover:shadow-lg">
+                            MORE
+                          </button>
+                    </a>
+                </div>
+        
+            </div>
+
+            <div class="max-w-2xl mx-auto mt-24 font-itim">
+                <div class="flex gap-3 bg-white border border-gray-300 rounded-xl overflow-hidden items-center justify-start">
+            
+                    <div class="relative w-32 h-32 flex-shrink-0 -translate-y-6">
+                        <img class="absolute left-0 top-0 w-full h-auto object-cover object-center transition duration-50" loading="lazy" src="https://m.media-amazon.com/images/I/91CjVy6i9aL._AC_SX679_.jpg">
+                    </div>
+            
+                    <div class="flex flex-col gap-2 py-2">
+            
+                        <p class="text-xl font-bold">Hunter x hunter</p>
+            
+                        <p class="text-gray-500">
+                            เป็นเรื่องราวของตัวเอกของเรื่องอย่างกอร์น ฟรีคส์ เด็กชายอายุ 12 ปี ที่ต้องการออกมาผจญภัยเพื่อสืบตามหาพ่อ จิน ฟรีคส์ 
+                            ที่เป็นฮันเตอร์มืออาชีพออกเดินทางเพื่อตามหาความฝันและทิ้งลูกชายเอาไว้เบื้องหลังตัวของกอร์นจึงพยายามที่จะเดินตามรอยพ่อของเขา
+                            เพื่อจะได้เป็นฮันเตอร์และอยากรู้ว่าอาชีพมันดีอย่างไรพ่อของเขาถึงทิ้งเขาไป...
+                        </p>
+                        <a href="/hxh">
+                            <button class="px-8 py-4 bg-gradient-to-r from-blue-500 to-purple-500 text-white font-bold rounded-full transition-transform transform-gpu hover:-translate-y-1 hover:shadow-lg">
+                                MORE
+                              </button>
+                        </a>
+                    </div>
+            
+                </div>
+
+                <div class="max-w-2xl mx-auto mt-24 font-itim">
+                    <div class="flex gap-3 bg-white border border-gray-300 rounded-xl overflow-hidden items-center justify-start">
+                
+                        <div class="relative w-32 h-32 flex-shrink-0 -translate-y-">
+                            <img class="absolute left-0 top-0 w-full h-auto object-cover object-center transition duration-50" loading="lazy" src="https://static.wikia.nocookie.net/deathnote/images/7/76/DEATH_NOTE_anime.jpg/revision/latest?cb=20170720215429">
+                        </div>
+                
+                        <div class="flex flex-col gap-2 py-2">
+                
+                            <p class="text-xl font-bold">Death note</p>
+                
+                            <p class="text-gray-500">
+                                ยางามิ ไลท์ ได้เก็บสมุดโน้ตเล่มหนึ่ง ซึ่ง ลุค ยมทูตตนหนึ่งได้ทำตกเอาไว้ 
+                จากการที่ลุคปรากฏตัวต่อหน้าไลท์ ทำให้ไลท์รู้ว่า สมุดโน้ตที่ตนเก็บได้นั้นเป็น “เดธโน้ต” 
+                สมุดโน้ตที่สามารถฆ่าคนได้ สถาปนาตนเองเป็นพระเจ้าและจัดการปราบปรามอาชญากรซะอยู่หมัด 
+                ผู้คนทั่วโลกจึงขนานนามว่า คิระ ...
+                            </p>
+                            <a href="/note">
+                                <button class="px-8 py-4 bg-gradient-to-r from-blue-500 to-purple-500 text-white font-bold rounded-full transition-transform transform-gpu hover:-translate-y-1 hover:shadow-lg">
+                    MORE
+                  </button>
+                            </a>
+                        </div>
+                
+                    </div> 
+
+
+
+
+{% endblock content %}
+
